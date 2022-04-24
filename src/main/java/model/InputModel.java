@@ -32,7 +32,6 @@ public class InputModel {
         System.out.println("시도할 횟수는 몇회인가요?");
         String input = Console.readLine();
         int raceCicle = Integer.parseInt(input);
-        System.out.println(raceCicle);
         return raceCicle;
     }
 
