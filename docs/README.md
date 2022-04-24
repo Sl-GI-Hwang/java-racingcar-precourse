@@ -10,6 +10,6 @@
 - b. 실행결과를 vo에 저장
 - 결과 Print 부분
 - a. vo에 있는 숫자를 '-' 기호로 변환하여 출력하는부분
-- . Winner 판별하는 부분
+- b. Winner 판별하는 부분
 3. 입력부분 IOException 
 4. 테스트 Code 작성
