@@ -17,7 +17,9 @@ public class RaceController {
         int inputRace = InputModel.getInputRace();
         for(int i = 0;  i < inputRace; i++) {
             carVo = CarRaceModel.RaceCar(carVo);
-            //printModel.raceResult(carVo);
+            printModel.raceResult(carVo);
         }
+        WinnerModel winnerModel = new WinnerModel();
+        winnerModel.raceWinner(carVo);
     }
 }
