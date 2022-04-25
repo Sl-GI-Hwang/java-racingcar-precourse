@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarRaceModel {
-
+    private static final int RACE_WIN_SCORE = 4;
     public static CarVo RaceCar(CarVo carVo) {
         int raceScore = 0, setWinner = 0;
         List<Integer> setRaceScore = new ArrayList<Integer>();
@@ -20,16 +20,14 @@ public class CarRaceModel {
     }
 
     private static int judgeToWin(int raceScore) {
-        int[] setWinner = {};
-        if(raceScore >= 4) {
+        if(raceScore >= RACE_WIN_SCORE) {
             return 1;
         }
         return 0;
     }
 
     private static int makeRace() {
-        int getRace = Randoms.pickNumberInRange(1, 9);
-        return getRace;
+        return Randoms.pickNumberInRange(1, 9);
     }
 
 
